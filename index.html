@@ -4,31 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zegar</title>
+    <title>Strona</title>
+    <link rel="stylesheet" href="style.css">
 
-    <script type="text/javascript">
-
-    function odliczanie() {
-        var dzisiaj = new Date();
-        var dzien = dzisiaj.getDate();
-
-        var godzina = dzisiaj.getHours();
-        var minuta = dzisiaj.getMinutes();
-        var sekunda = dzisiaj.getSeconds();
-
-        document.getElementById("zegar").innerHTML =
-        godzina+":"+minuta+":"+sekunda;
-
-        setTimeout("odliczanie()",1000);
-    }
-
-
-        
-    </script>
 </head>
-<body onload="odliczanie();">
-
-    <div id="zegar"></div>
+<body>
     
+    <div class="header">
+        <div id="logo">
+            <img src="https://cdn.discordapp.com/icons/398191673357893634/6fa6bc6715573f512406e40957b69da5.webp?size=96" alt="Nazwa/Logo">
+        </div>
+        <div id="login">
+            <button>Zaloguj się</button>
+        </div>    
+    </div>
+    <div class="footer">
+        <div id="links">
+            <a>Lorem ipsum dolor sit amet</a>
+        </div>
+        <div id="contacts">
+            Lorem ipsum dolor sit amet
+        </div>
+    </div>
+
 </body>
 </html>

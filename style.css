@@ -1,0 +1,63 @@
+body {
+    position: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    border-bottom: 5px solid lightblue;
+    background: lightskyblue;
+    min-height: 100px;
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+#logo {
+    margin: 0;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-style: italic;
+}
+
+#login {
+    position: absolute;
+    left: 90%;
+    top: 20%;
+    -ms-transform: translateY(-50%, -50%);
+    transform: translateY(-50%, -50%);
+    height: 100%;
+}
+
+#login > button {
+    color: white;
+    background-color: blue;
+    border: 0px;
+    cursor: pointer
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: dimgray;
+    border-top: 5px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+  #links {
+    float: left;
+    margin: 20px 5% 10px 25%;
+
+  }
+
+  #contacts {
+    float: left;
+    margin: 20px 25% 10px 5%;
+  }

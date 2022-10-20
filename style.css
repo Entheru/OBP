@@ -1,54 +1,70 @@
 body {
-    position: inherit;
     margin: 0;
     padding: 0;
+    background-color: #4254f5;
 }
 
-.header {
-    border-bottom: 5px solid lightblue;
-    background: lightskyblue;
+header {
+    border-bottom: 5px solid rgba(173, 216, 230, 100%);
+    background: white;
     min-height: 100px;
-    width: 100%;
-    padding: 0;
+    width: 90%;
+    padding: 0 5%;
+    margin: 0;
+    top: 0;
+    overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
 }
 
 #logo {
-    margin: 0;
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+
+    float: left;
     text-align: center;
     font-style: italic;
 }
 
-#login {
-    position: absolute;
-    left: 90%;
-    top: 20%;
-    -ms-transform: translateY(-50%, -50%);
-    transform: translateY(-50%, -50%);
-    height: 100%;
+#hyperlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
 }
 
-#login > button {
-    color: white;
-    background-color: blue;
+#hyperlinks > *{
+    margin-left: 20px;
+    text-align: center;
+        
+}
+
+#hyperlinks > button {
+    border-radius: 10%;
+    color: black;
+    background-color: lightblue;
     border: 0px;
+}
+
+#hyperlinks > *:hover {
+    text-decoration: underline;
     cursor: pointer
 }
 
-.footer {
-    position: absolute;
+footer {
+    position: relative;
     bottom: 0;
     width: 100%;
-    background-color: dimgray;
-    border-top: 5px solid gray;
+    background-color: black;
+    border-top: 5px solid rgb(53, 53, 53);
     display: flex;
     align-items: center;
     justify-content: center;    
+}
+
+footer > * {
+    color: lightgray;
 }
 
   #links {

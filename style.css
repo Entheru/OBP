@@ -34,8 +34,8 @@ header {
         
 }
 
-#hyperlinks > *{
-    margin-left: 20px;
+#hyperlinks > p{
+    margin-right: 20px;
     text-align: center;
         
 }
